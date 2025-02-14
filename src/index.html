@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind Css CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Icon CDN -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./input.css" />
+    <title>General Repair</title>
+  </head>
+  <body class="font-main">
+    <div class="flex overflow-hidden flex-col bg-white">
+      <header
+        class="flex flex-col items-center px-16 w-full text-sm font-semibold leading-none text-black bg-yellow-500 max-md:px-5 max-md:max-w-full"
+      >
+        <div
+          class="flex gap-10 items-center w-full max-w-[1592px] max-md:max-w-full"
+        >
+          <div class="flex gap-px self-stretch my-auto">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/78ab16f338e7e35921f55e3de75d4e7360487f19d1829dbfa65a3459e79a9823?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain shrink-0 w-7 aspect-[1.04]"
+              alt="Free pickup icon"
+            />
+            <div class="my-auto">FREE PICKUP</div>
+          </div>
+          <div
+            class="shrink-0 self-stretch w-px border border-solid border-stone-900 h-[51px]"
+            aria-hidden="true"
+          ></div>
+          <div class="flex gap-1 self-stretch my-auto">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/fae1895a2c186a819591ddd4ccbe6448630011527b8492b6dd827bf79eeb7e10?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain shrink-0 aspect-square w-[22px]"
+              alt="Free inspection icon"
+            />
+            <div class="basis-auto">FREE INSPECTION</div>
+          </div>
+          <div class="flex gap-10 self-stretch max-md:max-w-full">
+            <div
+              class="shrink-0 w-px border border-solid border-stone-900 h-[51px]"
+              aria-hidden="true"
+            ></div>
+            <div class="my-auto basis-auto">JOB APPROVAL</div>
+            <div
+              class="shrink-0 w-px border border-solid border-stone-900 h-[51px]"
+              aria-hidden="true"
+            ></div>
+            <div class="my-auto">REPAIR & FIX</div>
+            <div
+              class="shrink-0 w-px border border-solid border-stone-900 h-[51px]"
+              aria-hidden="true"
+            ></div>
+          </div>
+          <div class="flex gap-0.5 self-stretch my-auto">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/8b14c4f193f431eb92fa10cdb398e19494469bfdcad5a8b304162c12d0de8784?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain shrink-0 aspect-[1.79] w-[34px]"
+              alt="Deliver back icon"
+            />
+            <div class="my-auto basis-auto">DELIVER BACK</div>
+          </div>
+          <div
+            class="shrink-0 self-stretch w-px border border-solid border-stone-900 h-[51px]"
+            aria-hidden="true"
+          ></div>
+          <div class="grow shrink self-stretch my-auto w-[136px]">
+            4.9 Google Reviews
+          </div>
+          <div
+            class="shrink-0 self-stretch w-px border border-solid border-stone-900 h-[51px]"
+            aria-hidden="true"
+          ></div>
+          <div
+            class="flex gap-2 self-stretch my-auto text-sm tracking-wider leading-loose whitespace-nowrap"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/e96c14c1df6393df93e8fbe827e6d89bb925c9ca05bf55ffaa145df3090f43a8?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain shrink-0 rounded aspect-[1.31] w-[34px]"
+              alt="Language selection icon"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/ea91abc71f495ed8447f600158d9fa510940fb33e1e0723855d76427f60a1a94?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain shrink-0 my-auto w-px aspect-[0.06]"
+              alt=""
+              aria-hidden="true"
+            />
+            <div class="self-start">عربي</div>
+          </div>
+        </div>
+      </header>
+      <nav
+        class="flex flex-wrap gap-5 justify-between items-center self-center mt-9 ml-7 w-full font-semibold leading-loose text-black max-w-[1646px] max-md:max-w-full"
+      >
+        <div class="flex gap-3.5 self-stretch my-auto">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/988f51bb2ceefdae6c95bb1ba8224283ba8390ca1fa9ee52b86e022b9a1ad3a2?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+            class="object-contain shrink-0 rounded-2xl aspect-[1.02] shadow-[11px_11px_18px_rgba(0,0,0,0.28)] w-[63px]"
+            alt="Phone icon"
+          />
+          <div class="flex flex-col my-auto">
+            <div class="self-start text-sm tracking-wider">Call Us</div>
+            <a href="tel:+971565458853" class="mt-3 text-lg tracking-wider"
+              >+971 56 545 8853</a
+            >
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/e470266837ed516901f1f38cb4a6f4f1fc46dfa6759e79f513a1d9d80aabe8a9?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+          class="object-contain shrink-0 self-stretch max-w-full aspect-[1.49] w-[134px]"
+          alt="Gargash Auto logo"
+        />
+        <div class="flex gap-3.5 self-stretch my-auto whitespace-nowrap">
+          <div
+            class="flex shrink-0 bg-black rounded-2xl border-yellow-500 border-solid border-[3px] h-[63px] shadow-[11px_11px_18px_rgba(0,0,0,0.28)] w-[63px]"
+            aria-hidden="true"
+          ></div>
+          <div class="flex flex-col my-auto">
+            <div class="self-start text-sm tracking-wider">Email</div>
+            <a
+              href="mailto:sales@gargashauto.ae"
+              class="mt-3 text-lg tracking-wider"
+              >sales@gargashauto.ae</a
+            >
+          </div>
+        </div>
+      </nav>
+      <nav
+        class="flex flex-col justify-center items-center px-16 py-7 mt-11 w-full text-base font-semibold leading-none text-black border border-solid border-zinc-300 max-md:px-5 max-md:mt-10 max-md:max-w-full"
+      >
+        <div class="flex flex-wrap gap-5 justify-between max-w-full w-[1042px]">
+          <div class="flex gap-10">
+            <a href="#" class="hover:underline focus:underline">Home</a>
+            <a href="#" class="basis-auto hover:underline focus:underline"
+              >Annual Contract</a
+            >
+            <a href="#" class="basis-auto hover:underline focus:underline"
+              >Upcoming Promotions</a
+            >
+          </div>
+          <div class="flex gap-1.5 whitespace-nowrap">
+            <a href="#" class="grow hover:underline focus:underline"
+              >Services</a
+            >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/b2b84a85ca612e5c753565e2fbc26550311692fde9928bc4dc00c2f2ed931c2d?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain shrink-0 self-start w-3 aspect-[1.5]"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="flex gap-10">
+            <a href="#" class="hover:underline focus:underline">Body Shop</a>
+            <a href="#" class="hover:underline focus:underline">Blog</a>
+            <a href="#" class="hover:underline focus:underline">About Us</a>
+            <a href="#" class="hover:underline focus:underline">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Section Start -->
+      <section
+        class="flex relative z-10 flex-col justify-center items-center px-20 py-64 w-full min-h-[777px] max-md:px-5 max-md:py-24 max-md:max-w-full"
+      >
+        <!-- Background Image -->
+        <img
+          loading="lazy"
+          src="./img/hero-bg.png"
+          class="object-cover absolute inset-0 size-full"
+          alt="Background image of luxury cars"
+        />
+
+        <!-- Hero Content Wrapper -->
+        <div
+          class="flex relative flex-col items-center mb-0 max-w-full w-[818px] max-md:mb-2.5"
+        >
+          <!-- Main Heading -->
+          <h1
+            class="self-stretch text-7xl font-bold text-center text-main leading-[68px] max-md:max-w-full max-md:text-4xl max-md:leading-10"
+          >
+            Gargash Auto Service
+            <br />
+            <span class="text-white">Center Dubai</span>
+          </h1>
+
+          <!-- Subtext -->
+          <p class="mt-3 text-base leading-none text-center text-white">
+            Adding exquisite care to your luxurious journey
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div
+            class="flex flex-wrap gap-5 justify-between mt-8 max-w-full text-xl font-semibold tracking-normal w-[540px]"
+          >
+            <!-- Discount Button -->
+            <a
+              href="#"
+              class="px-8 py-4 text-black bg-yellow-500 rounded-2xl max-md:px-5 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
+            >
+              Avail Your Discount
+            </a>
+
+            <!-- Call Now Button -->
+            <a
+              href="tel:+971565458853"
+              class="px-16 py-4 text-white rounded-2xl border border-white border-solid max-md:px-5 hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
+            >
+              Call Now
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- Form Section Start -->
+      <section
+      class="form-section bg-[url(./img/form-section-bg.png)] bg-center bg-cover w-full h-[1256px] flex gap-20 items-center justify-center px-20 relative "
+    >
+      <!-- Form Left Section -->
+      <div class="form-left w-1/2 relative">
+        
+        <form
+          class="relative flex flex-col gap-5 mt-6 bg-[url(./img/form-bg.png)] bg-center bg-cover p-10 rounded-2xl py-32 z-10"
+        >
+        <span
+        class="w-full flex items-center gap-1.5 border-2 border-[#9B9B9B] rounded-[10px] px-2 py-3 text-left"
+      >
+        <img src="./img/form-icon-1.png" alt="" />
+        <input
+          type="text"
+          placeholder="Enter Full Name"
+          class="w-full text-[14.5px] font-normal outline-none tracking-tight"
+        />
+      </span>
+      <span
+        class="w-full flex items-center gap-1.5 border-2 border-[#9B9B9B] rounded-[10px] px-2 py-3 text-left"
+      >
+        <img src="./img/form-icon-2.png" alt="" />
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          class="w-full text-[14.5px] font-normal outline-none tracking-tight"
+        />
+      </span>
+      <span
+        class="w-full flex items-center gap-1.5 border-2 border-[#9B9B9B] rounded-[10px] px-2 py-3 text-left"
+      >
+        <img src="./img/form-icon-3.png" alt="" />
+        <input
+          type="text"
+          placeholder="Make"
+          class="w-full text-[14.5px] font-normal outline-none tracking-tight"
+        />
+      </span>
+      <span
+        class="w-full flex items-center gap-1.5 border-2 border-[#9B9B9B] rounded-[10px] px-2 py-3 text-left"
+      >
+        <img src="./img/form-icon-3.png" alt="" />
+        <input
+          type="text"
+          placeholder="Model/Variant"
+          class="w-full text-[14.5px] font-normal outline-none tracking-tight"
+        />
+      </span>
+      <span class="flex items-center gap-2">
+        <span class="relative w-[50%]">
+          <img
+            src="./img/down-arrow.png"
+            alt=""
+            class="bg-no-repeat bg-center absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none"
+          />
+          <select
+            class="w-full appearance-none border-2 border-[#9B9B9B] rounded-[10px] px-2 py-3 pl-10 text-[14.5px] font-normal tracking-tight"
+          >
+            <option value="" disabled selected hidden>
+              Major
+            </option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+          <img
+            src="./img/form-icon-4.png"
+            alt=""
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 pointer-events-none"
+          />
+        </span>
+        <span class="relative w-[50%]">
+          <img
+            src="./img/down-arrow.png"
+            alt=""
+            class="bg-no-repeat bg-center absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none"
+          />
+          <select
+            class="w-full appearance-none border-2 border-[#9B9B9B] rounded-[10px] px-2 py-3 pl-10 text-[14.5px] font-normal tracking-tight"
+          >
+            <option value="" disabled selected hidden>
+              Minor
+            </option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+          </select>
+          <img
+            src="./img/form-icon-5.png"
+            alt=""
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 pointer-events-none"
+          />
+        </span>
+      </span>
+
+      <span
+        class="w-full flex items-center gap-1.5 border-2 border-[#9B9B9B] rounded-[10px] px-2 py-3 text-left"
+      >
+        <img src="./img/form-icon-6.png" alt="" />
+        <input
+          type="text"
+          placeholder="Location"
+          class="w-full text-[14.5px] font-normal outline-none tracking-tight"
+        />
+      </span>
+          <span class="w-[87.16px] h-[87.16px] rounded-[50%] bg-[#e6b110] absolute -bottom-12 left-[43%] flex justify-center items-center"><i class="ri-arrow-right-s-line text-5xl text-black"></i></span>
+        </form>
+      </div>
+      
+      <!-- Form Right Section -->
+      <div class="form-right w-1/2 flex flex-col gap-5">
+        <h2 class="text-center font-bold text-black text-6xl leading-[0.85]">
+          Your seamless
+          <span class="text-main">Driving Experience</span> Begins Here.
+        </h2>
+        <p class="text-text-color font-normal text-[22px] text-center tracking-tight">
+          Book Gargash Car Workshop
+        </p>
+      </div>
+      <!-- Cars Image -->
+      <img
+        src="./img/form-bg-top-cars.png"
+        class="absolute -bottom-[10%] left-0 z-10 w-[100%] "
+        alt="Cars">
+    </section>
+
+
+
+      <!-- Form Section End -->
+
+      <section
+        class="flex flex-col self-end mt-32 w-full max-w-[1753px] max-md:mt-10 max-md:max-w-full"
+      >
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/803ca8bae5cbcb03333fc4626700e8a69f22cb5f1275c29f7d7beb159f44a96a?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+          class="object-contain w-full aspect-[1.13] max-md:max-w-full"
+          alt="Car service illustration"
+        />
+        <a
+          href="tel:+971565458853"
+          class="self-center px-12 pt-6 pb-10 mt-9 max-w-full text-xl font-semibold tracking-normal text-black bg-yellow-500 rounded-2xl w-[246px] max-md:px-5 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
+        >
+          Call Our Advisor
+        </a>
+        <div
+          class="flex flex-wrap gap-5 justify-between self-end mt-48 w-full max-w-[1718px] max-md:mt-10 max-md:max-w-full"
+        >
+          <div
+            class="flex flex-col px-10 py-14 bg-white rounded-2xl max-md:px-5"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/25206ac90ba5cc35b0165dfaa860d7bbb0ce1cd347c3b51b735ced1a01ab51df?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain w-full aspect-[1.47] max-md:mr-2.5 max-md:ml-2"
+              alt="General Repair icon"
+            />
+            <h3
+              class="self-center mt-6 text-3xl font-bold tracking-tighter text-black"
+            >
+              General Repair
+            </h3>
+            <p
+              class="mt-6 text-lg tracking-tighter leading-5 text-center text-black rotate-[-1.7151245100058819e-15rad]"
+            >
+              Minor & Major Services, Under Body Repair, Mechanical Repair,
+              Electrical Repair, Other General Repair.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-12 py-14 text-center text-black bg-white rounded-2xl max-md:px-5"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/76538716c6d095a9509f9dc94f27ed590a007c8afa67174189c966b46b99fa58?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain max-w-full aspect-[1.46] w-[278px]"
+              alt="Brakes Service icon"
+            />
+            <h3 class="mt-9 text-3xl font-bold tracking-tighter">
+              Brakes Service
+            </h3>
+            <p
+              class="self-stretch mt-6 text-lg tracking-tighter leading-5 rotate-[-1.7151245100058819e-15rad]"
+            >
+              Minor & Major Services, Under Body Repair, Mechanical Repair,
+              Electrical Repair, Other General Repair.
+            </p>
+          </div>
+          <div
+            class="flex flex-col px-10 py-14 bg-white rounded-2xl max-md:px-5"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/876672617a403fd0068deee2d772177dfb7e2bda364eb2ff3ac5dfb03479994d?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain self-start ml-3.5 w-full aspect-[1.46] max-md:ml-2.5"
+              alt="Oil Change Service icon"
+            />
+            <h3
+              class="mt-6 mr-3.5 ml-3 text-3xl font-bold tracking-tighter text-black max-md:mx-2.5"
+            >
+              Oil Change Service
+            </h3>
+            <p
+              class="mt-6 text-lg tracking-tighter leading-5 text-center text-black rotate-[-1.7151245100058819e-15rad]"
+            >
+              Minor & Major Services, Under Body Repair, Mechanical Repair,
+              Electrical Repair, Other General Repair.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-12 py-14 text-center text-black bg-white rounded-2xl max-md:px-5"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/76538716c6d095a9509f9dc94f27ed590a007c8afa67174189c966b46b99fa58?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain max-w-full aspect-[1.46] w-[278px]"
+              alt="Additional Service icon"
+            />
+            <h3 class="mt-9 text-3xl font-bold tracking-tighter">
+              Additional Service
+            </h3>
+            <p
+              class="self-stretch mt-6 text-lg tracking-tighter leading-5 rotate-[-1.7151245100058819e-15rad]"
+            >
+              Minor & Major Services, Under Body Repair, Mechanical Repair,
+              Electrical Repair, Other General Repair.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-end py-14 pl-4 text-lg tracking-tighter leading-5 text-center text-black bg-white rounded-2xl"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/c42e28504a599a31a1be260ee03d695aef82e4e3a0292d7fd98b135072f8e14a?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-contain w-6 aspect-[0.13]"
+              alt="Decorative element"
+            />
+            <p class="mt-24 rotate-[-1.7151245100058819e-15rad] max-md:mt-10">
+              Minor & Major Services, Under Body Repair, Mechanical Repair,
+              Electrical Repair, Other General Repair.
+            </p>
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/49d48873d10072d778ac9c1fdafaf9631081fdcaf523b6a5227dcdaf4512af61?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+          class="object-contain mt-28 ml-3.5 aspect-[28.57] max-w-[1558px] rounded-[54px] w-[1558px] max-md:mt-10 max-md:max-w-full"
+          alt="Car service process illustration"
+        />
+        <div
+          class="flex flex-wrap gap-10 mt-9 ml-12 w-full max-w-[1409px] max-md:max-w-full"
+        >
+          <div
+            class="flex flex-col flex-1 my-auto text-black max-md:max-w-full"
+          >
+            <h2
+              class="self-start text-7xl font-bold leading-[64px] max-md:max-w-full max-md:text-4xl max-md:leading-10"
+            >
+              Brands We
+              <br />
+              <span class="text-yellow-500">Specialized In</span>
+            </h2>
+            <p class="mt-9 text-xl font-light leading-8 max-md:max-w-full">
+              We Have Complete Auto Repair Solutions, Friendly Environment,
+              Furnished Sitting Area Providing Quick & Quality Service
+            </p>
+          </div>
+          <div
+            class="flex overflow-hidden relative flex-col flex-1 justify-center items-start py-20 min-h-[598px] max-md:max-w-full"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/bcb63d6c9fc34f3d93c48171e976046285a6ea9d5b107af79b5887be1870151e?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+              class="object-cover absolute inset-0 size-full"
+              alt="Background for brand logos"
+            />
+            <div
+              class="flex relative flex-col pt-14 mr-0 bg-white bg-opacity-80 rounded-[32px] shadow-[13px_18px_34px_rgba(0,0,0,0.14)] max-md:max-w-full"
+            >
+              <div
+                class="flex flex-col self-end pt-4 mr-7 max-w-full w-[452px] max-md:mr-2.5"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/6a1c53445225e87caace9fe260fc27a8f213a7e1bf9e823ac1be95a792f9220b?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                  class="object-contain self-end mt-4 mr-16 aspect-square w-[79px] max-md:mr-2.5"
+                  alt="Brand logo 1"
+                />
+                <div class="flex z-10 flex-col mt-0 w-[74px]">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/2b087c6cb35c9249e8cd7ac40ac423252e5bcdb4c92736cc3298ec552c8e5878?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                    class="object-contain w-full aspect-[0.73] max-md:mr-1"
+                    alt="Brand logo 2"
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/d1eedca3bdcf319ccfb0f52a2b8db8d54ce12322e2848eebdfc33aa265f2e6f1?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                    class="object-contain mt-24 w-full aspect-square max-md:mt-10"
+                    alt="Brand logo 3"
+                  />
+                </div>
+                <div
+                  class="flex z-10 flex-col self-center mt-0 w-[86px] max-md:mt-0"
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/83709b6ceefe9cd3217e0ed1695318cbff04a004bd7d11dcae7c39a789376a9c?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                    class="object-contain w-full aspect-[0.99]"
+                    alt="Brand logo 4"
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/bb253e86f5de99924b05c2f97a689b17abf2640aa21e9986baf086234736f662?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                    class="object-contain mt-24 w-full aspect-square max-md:mt-10 max-md:mr-1.5"
+                    alt="Brand logo 5"
+                  />
+                </div>
+                <div
+                  class="flex relative flex-col self-end pb-48 mt-0 w-1.5 aspect-[0.018] max-md:pb-24 max-md:mt-0"
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/7eb5c64a25b1794ced979c74ef9b4dae364155233e02bef7a1f767d4d63b005b?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                    class="object-cover absolute inset-0 size-full"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/8df9106cdd5d8cdb767e7717cfe2a1050a0a34929fe6799648e8ff37185fc90b?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                    class="object-contain mb-0 w-full aspect-[0.04] max-md:mb-2.5"
+                    alt="Brand logo 6"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex z-10 flex-col items-end px-14 mt-0 max-md:px-5 max-md:mt-0 max-md:max-w-full"
+              >
+                <div class="flex z-10 flex-col self-start w-60 max-w-full">
+                  <div class="flex flex-col px-1 w-full">
+                    <div class="flex gap-5 justify-between">
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/0e3671bc1c680d4bf9b741dda4f6411e33d6d5999042a1e0af8e5ca1c8917982?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                        class="object-contain shrink-0 aspect-square w-[84px]"
+                        alt="Brand logo 7"
+                      />
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/8803f9229bcbc7cea207464efd3332a4a2f89a8ad960abd1afb43227ffe4b9b2?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                        class="object-contain shrink-0 my-auto w-24 aspect-[1.78]"
+                        alt="Brand logo 8"
+                      />
+                    </div>
+                    <div class="flex gap-10 self-start mt-20 max-md:mt-10">
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/c3dc9a7dd63721e1c8398ef297ec1be5827235dfe6d04612d2c8eaf4d0281c99?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                        class="object-contain shrink-0 aspect-square w-[81px]"
+                        alt="Brand logo 9"
+                      />
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/1b5b5f3aa9178a6cea2c2c8340b55546e7321bf3504c62ccbdb42de5316bfc7a?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                        class="object-contain shrink-0 my-auto aspect-[1.01] w-[75px]"
+                        alt="Brand logo 10"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex gap-10 self-start mt-20 max-md:mt-10">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/9a93447d06ea42ffa84e7655e21648d45e3fa528128c94e765371d84ba31835c?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                      class="object-contain shrink-0 aspect-[2.88] w-[95px]"
+                      alt="Brand logo 11"
+                    />
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/3855432485f69339baa40f6d95c6a9237d36fe154780a793611589d27179c7cd?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                      class="object-contain shrink-0 self-start mt-2.5 aspect-[3.26] w-[75px]"
+                      alt="Brand logo 12"
+                    />
+                  </div>
+                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/9619d8ba751602b90d6dcb8a59f1f0103b9dbaa88059e920d075309bcc319666?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                  class="object-contain -mt-48 aspect-square w-[74px]"
+                  alt="Brand logo 13"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/0bc122b7e5f5c5f015f65e63a232d0de2d810f2660364e66729678c76749a7f2?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                  class="object-contain self-center mt-24 aspect-[3.22] w-[74px] max-md:mt-10"
+                  alt="Brand logo 14"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/55da65fb9ac213d55c7534cc3944ae6d7b3c597178a1af37f5f48ed7c002c95e?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                  class="object-contain z-10 mt-0 mr-40 aspect-[3.22] w-[74px] max-md:mr-2.5"
+                  alt="Brand logo 15"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/16cd421bf6c9ce5a2b66a9821d0ea9be938238cdfbd15f564b64054f6a3f9876?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+                  class="object-contain z-10 mt-0 aspect-[3.22] w-[74px]"
+                  alt="Brand logo 16"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="flex flex-col items-center pt-20 mt-36 w-full text-8xl text-black bg-stone-50 max-md:mt-10 max-md:max-w-full max-md:text-4xl"
+      >
+        <div
+          class="flex flex-wrap gap-5 justify-between w-full text-2xl font-light leading-8 max-w-[1589px] max-md:max-w-full"
+        >
+          <p class="max-md:max-w-full">
+            From exclusive discounts to top-tier services, we guarantee your
+            premium vehicle receives the finest care and smart maintenance.
+          </p>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/4821c89d65067c6ae0f5a991261d80c5a056e8bce2840b49d6ab19e26738c741?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+            class="object-contain shrink-0 self-start mt-4 max-w-full aspect-[5.18] w-[223px]"
+            alt="Decorative element"
+          />
+        </div>
+        <div
+          class="flex flex-wrap gap-5 justify-between mt-20 w-full leading-none whitespace-nowrap max-w-[1568px] max-md:mt-10 max-md:max-w-full max-md:text-4xl"
+        >
+          <h2 class="max-md:text-4xl">Brands</h2>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/696c996c7ad05b338f76ca4fb156e031e11d6501565e691eb5012c270ab1710f?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+            class="object-contain shrink-0 self-end mt-16 aspect-[1.79] w-[34px] max-md:mt-10"
+            alt="Arrow icon"
+          />
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/9f574d042023ddc5088b7634b5e688a81e3eb01912fd205afb31366aec754611?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+          class="object-contain mt-8 w-full aspect-[1000] max-w-[1597px] max-md:max-w-full"
+          alt="Decorative line"
+        />
+        <div
+          class="flex flex-wrap gap-5 justify-between mt-3.5 w-full leading-none whitespace-nowrap max-w-[1568px] max-md:max-w-full max-md:text-4xl"
+        >
+          <h2 class="max-md:max-w-full max-md:text-4xl">Services</h2>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/696c996c7ad05b338f76ca4fb156e031e11d6501565e691eb5012c270ab1710f?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+            class="object-contain shrink-0 self-end mt-16 aspect-[1.79] w-[34px] max-md:mt-10"
+            alt="Arrow icon"
+          />
+        </div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/9f574d042023ddc5088b7634b5e688a81e3eb01912fd205afb31366aec754611?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+          class="object-contain mt-11 w-full aspect-[1000] max-w-[1597px] max-md:mt-10 max-md:max-w-full"
+          alt="Decorative line"
+        />
+        <div
+          class="flex flex-wrap gap-5 justify-between mt-2.5 w-full leading-none max-w-[1568px] max-md:max-w-full max-md:text-4xl"
+        >
+          <h2 class="max-md:max-w-full max-md:text-4xl">Contact Us</h2>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/696c996c7ad05b338f76ca4fb156e031e11d6501565e691eb5012c270ab1710f?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+            class="object-contain shrink-0 self-end mt-16 aspect-[1.79] w-[34px] max-md:mt-10"
+            alt="Arrow icon"
+          />
+        </div>
+        <div
+          class="flex overflow-hidden relative flex-col items-center self-stretch px-16 pt-36 pb-16 mt-7 w-full text-base text-center min-h-[229px] max-md:px-5 max-md:pt-24 max-md:max-w-full"
+        >
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/0b8a715db75e4c5bb6e3d991657ae064/449457ae89c242945f58c6b81b87b18b69f979e0c1c2acf18b224da05d3610bd?apiKey=0b8a715db75e4c5bb6e3d991657ae064&"
+            class="object-cover absolute inset-0 size-full"
+            alt="Footer background"
+          />
+          <div
+            class="flex relative flex-wrap gap-5 justify-between w-full max-w-[1591px] max-md:max-w-full"
+          >
+            <p class="tracking-wide">
+              Copyrights © 2024. Powered by GARGASH AUTO
+            </p>
+            <nav class="tracking-normal leading-none">
+              <a href="#" class="hover:underline focus:underline"
+                >Terms & Condition</a
+              >
+              |
+              <a href="#" class="hover:underline focus:underline"
+                >Privacy Policy</a
+              >
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
