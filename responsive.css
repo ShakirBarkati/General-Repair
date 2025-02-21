@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; Horizontal overflow hatane ke liye */
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container, .box-container, .brands, .about, .services-solution {
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+/* Mobile (Max width 768px) */
+@media (max-width: 768px) {
+  /* Hero Section Start */
+  .heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .hero-text {
+    line-height: 22px;
+    color: #ffffff;
+    margin: 20px 0px;
+  }
+
+  /* Buttons */
+  .btn-custom {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+  }
+
+  .hero-btn-1 {
+    color: #111;
+    background: #e6b110;
+  }
+  .hero-btn-2 {
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+  }
+
+  /* Hero Section End*/
+
+  /* About Section Start */
+
+  .about {
+    position: relative;
+    background: url("./img/about-section-bg.png") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  /* car image in bottom  */
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 1rem;
+  }
+
+  .about::after {
+    width: 100%;
+    height: auto;
+    bottom: -150px;
+    left: 0;
+  }
+
+  .about .left {
+    width: 100%;
+    order: 2;
+  }
+
+  .about .right {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+
+  .about-content {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .about .left .form-container {
+    padding: 50px 30px 80px 30px;
+  }
+
+  .double {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left .btn {
+    width: 80px;
+    height: 80px;
+    margin-top: -30px;
+  }
+  /* About Section End */
+
+  /* Service Partner Styling Start */
+
+  .hero-section {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .Partner-heading {
+    font-size: 28px;
+  }
+
+  .Partner-content {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .partnerme-btn {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .d-flex.justify-content-center.justify-content-md-start {
+    justify-content: center !important;
+  }
+
+  .col-md-6 img {
+    max-width: 90%;
+  }
+
+  /* Service Partner Styling End */
+
+  /* Services Solution Styling Start */
+
+  .services-solution {
+    height: auto;
+    padding: 5rem 2rem;
+    margin-top: 5rem;
+  }
+
+  .services-solution .top h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .services-solution .mid img {
+    width: 90%;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .partnerme-btn {
+    width: 100%;
+    max-width: 250px;
+    font-size: 18px;
+  }
+
+  /* Services Solution Styling End */
+  /* box-container Styling start */
+
+  .box-container {
+    height: auto;
+    margin-top: 0;
+    padding: 20px;
+  }
+  .boxs-wraper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .box {
+    width: 100%;
+    padding: 15px;
+  }
+  .box img {
+    width: 100%;
+  }
+  .box-content h4 {
+    font-size: 24px;
+  }
+  .box-content p {
+    font-size: 16px;
+  }
+
+  /* box-container Styling End */
+}
+
+@media (max-width: 480px) {
+  .Partner-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .Partner-content {
+    font-size: 14px;
+  }
+
+  .partnerme-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .col-md-6 img {
+    max-width: 100%;
+  }
+
+  /* Services Solution Styling Start */
+
+  .services-solution {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .services-solution .top h2 {
+    font-size: 20px;
+  }
+  .services-solution .mid {
+    margin: 0 auto;
+    padding-left: 1.3rem;
+  }
+  .services-solution .mid img {
+    width: 400px;
+  }
+
+  .partnerme-btn {
+    font-size: 16px;
+  }
+
+  /* Services Solution Styling End */
+}
+
+@media (max-width: 1200px) {
+  .services-solution .top h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Services Solution Styling Start */
+  .services-solution .top h2 {
+    font-size: 25px;
+    padding: 0;
+  }
+  .mid img {
+    width: 100%;
+  }
+  /* Services Solution Styling End */
+}
+
+@media (max-width: 1024px) {
+  .boxs-wraper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }  
+}
+
+/* /////////////////////////////// */
+
+@media (max-width: 768px) {
+  .brands {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .brand-content,
+  .brand-logos {
+    width: 100%;
+    height: auto;    
+  }
+  .brand-content{
+    text-align: center;
+  }
+
+  .brand-content h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .brand-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .brand-logos {
+    flex-direction: column;
+  }
+
+  .brand-logos img {
+    display: none; /* Mobile view se hata diya */
+  }
+
+  .logo-box {
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-box-wraper {
+    grid-template-columns: repeat(2, 1fr); /* Mobile par 2 columns */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden; /* Scroll ko bhi hataya */
+  }
+
+  .logo-box-wraper span {    
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+

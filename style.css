@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+* {
+  font-family: "Sora", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-color {
+  color: #e6b110;
+}
+.black-color {
+  color: #111;
+}
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  background: url("./img/gr-hero-bg.png") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+/* Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.heading {
+  font-size: 70px;
+  line-height: 93%;
+}
+
+.hero-text {
+  font-size: 15.75px;
+  line-height: 103%;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 20px 0px;
+}
+
+/* Buttons */
+.btn-custom {
+  display: inline-block;
+  padding: 12px 35px;
+  font-size: 18.51px;
+  border-radius: 8px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+}
+
+.hero-btn-1 {
+  color: #111;
+  background: #e6b110;
+}
+.hero-btn-2 {
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+/* About Section styling Start  */
+.about {
+  position: relative;
+  background: url("./img/form-section-bg.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  background: url("./img/car-group.png") no-repeat center center/cover;
+  width: 1313px;
+  height: 275px;
+  bottom: -200px;
+  left: 5%;
+  z-index: 1;
+  overflow: visible;
+}
+
+.about .left {
+  width: 50%;
+}
+
+.about-content {
+  font-size: 65.47px;
+  font-weight: 700;
+  line-height: 85%;
+  text-align: center;
+  color: black;
+}
+
+.about .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .left .form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./img/form-bg.png") no-repeat center center/cover;
+  padding: 100px 60px;
+  border-radius: 10px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  gap: 5px;
+  border: 2px solid #9b9b9b;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.double {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.left .btn {
+  background: #e6b110;
+  color: #111;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .btn:hover {
+  background: #e6b110e0;
+  color: #111;
+}
+
+.car-group-img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About Section styling End  */
+
+/* Service Partner Styling Start */
+
+.hero-section {
+  color: #111; /* Gray-600 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+.hero-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1f2937; /* Gray-900 */
+}
+.partnerme-btn {
+  background-color: #e6b110; /* Indigo-500 */
+  color: #111;
+  padding: 12px 35px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18.51px;
+  font-weight: 600;
+  letter-spacing: -1%;
+}
+.partnerme-btn:hover {
+  background-color: #e6b110dc; /* Indigo-600 */
+}
+
+.Partner-heading {
+  font-size: 34.99px;
+  font-weight: 700;
+  line-height: 117%;
+  text-align: left;
+}
+.Partner-content {
+  font-size: 18px;
+  line-height: 166%;
+  font-weight: 300;
+  color: #111;
+  margin: 20px 0px;
+}
+/* Service Partner Styling End */
+
+/* Services Solution Styling Start */
+
+.services-solution {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+.services-solution .top h2 {
+  font-size: 58.62px;
+  font-weight: 700;
+  line-height: 93%;
+  text-align: center;
+  padding: 0px 15rem;
+}
+.services-solution .top h2 span {
+  color: #e6b110;
+}
+
+.services-solution .mid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-solution .mid img {
+  width: 100%;
+}
+/* Services Solution Styling End */
+
+/* box-container Styling Start */
+
+.box-container {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  padding: 10px;
+}
+.boxs-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-1 {
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 3px,
+        transparent 3px
+      )
+      0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px)
+      100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px)
+      0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100%
+      100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 10px)
+      calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 16px)
+      calc(100% - 10px) no-repeat,
+    linear-gradient(0deg, #e6b110 43%, #eeeeee 72%);
+  border-radius: 8px;
+  padding: 9px;
+  box-sizing: border-box;
+}
+.box-2 {
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 3px,
+        transparent 3px
+      )
+      0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px)
+      100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px)
+      0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100%
+      100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 10px)
+      calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 16px)
+      calc(100% - 10px) no-repeat,
+    repeating-linear-gradient(0deg, #747474 0%, #eeeeee 100%);
+  border-radius: 8px;
+  padding: 9px;
+  box-sizing: border-box;
+}
+.box-1 img {
+  width: 80%;
+}
+.box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  padding: 0px 15px;
+}
+.box-content h4 {
+  font-size: 30px;
+  letter-spacing: -4%;
+  font-weight: 700;
+  line-height: 117%;
+}
+.box-content p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 114.2%;
+  letter-spacing: -4%;
+}
+/* box-container Styling End */
+
+/* Brands Section Styling Start */
+
+.brands {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 2rem;
+
+  flex-wrap: wrap;
+}
+.brand-content,
+.brand-logos {
+  width: 50%;
+  height: 100%;
+}
+.brand-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.brand-content h2 {
+  font-size: 68.8px;
+  font-weight: 700;
+  line-height: 93%;
+  text-align: left;
+  color: #111;
+}
+
+.brand-content p {
+  font-size: 21.13px;
+  font-weight: 300;
+  line-height: 30.5px;
+  text-align: left;
+}
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.brand-logos img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.logo-box {
+  width: 100%;
+  min-height: 400px;
+  background-color: #e1e1e183;
+  
+}
+.logo-box-wraper {
+  width: 100%;
+  min-height: 400px;  
+  
+  display: grid;
+  
+  grid-template-columns: repeat(5, 1fr);  
+  overflow-y: scroll;    
+}
+
+/* Scrollbar Styling */
+.logo-box-wraper::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.logo-box-wraper::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light gray background */
+  border-radius: 10px;
+}
+
+.logo-box-wraper::-webkit-scrollbar-thumb {
+  background: #c0c0c0; /* Light gray thumb */
+  border-radius: 10px; /* Rounded scrollbar */
+}
+
+.logo-box-wraper::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0; /* Slightly darker gray on hover */
+}
+
+.logo-1 {
+  background: url("./img/logo-1.png") no-repeat center center;
+}
+.logo-2 {
+  background: url("./img/logo-2.png") no-repeat center center;
+}
+.logo-3 {
+  background: url("./img/logo-3.png") no-repeat center center;
+}
+.logo-4 {
+  background: url("./img/logo-4.png") no-repeat center center;
+}
+.logo-5 {
+  background: url("./img/logo-5.png") no-repeat center center;
+}
+.logo-6 {
+  background: url("./img/logo-6.png") no-repeat center center;
+}
+.logo-7 {
+  background: url("./img/logo-7.png") no-repeat center center;
+}
+.logo-8 {
+  background: url("./img/logo-8.png") no-repeat center center;
+}
+.logo-9 {
+  background: url("./img/logo-9.png") no-repeat center center;
+}
+.logo-10 {
+  background: url("./img/logo-10.png") no-repeat center center;
+}
+/* Brands Section Styling End */
