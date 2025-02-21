@@ -4,19 +4,24 @@
   box-sizing: border-box;
   /* overflow-x: hidden; Horizontal overflow hatane ke liye */
 }
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
-}
-
-.container, .box-container, .brands, .about, .services-solution {
-  margin: 0 auto;
-  padding: 0;
 }
 
 
 /* Mobile (Max width 768px) */
 @media (max-width: 768px) {
+  
+.container,
+.box-container,
+.brands,
+.about,
+.services-solution {
+  margin: 0 auto;
+  padding: 0;
+}
   /* Hero Section Start */
   .heading {
     font-size: 35px;
@@ -152,15 +157,16 @@ html, body {
 
   /* Services Solution Styling Start */
 
-  .services-solution {
+  .services-solution {    
     height: auto;
-    padding: 5rem 2rem;
-    margin-top: 5rem;
+    padding:30px;  
+    justify-content: start;
   }
 
   .services-solution .top h2 {
     font-size: 32px;
     line-height: 1.2;
+    padding: 0px;
   }
 
   .services-solution .mid img {
@@ -179,12 +185,14 @@ html, body {
   }
 
   /* Services Solution Styling End */
+
   /* box-container Styling start */
 
   .box-container {
     height: auto;
     margin-top: 0;
     padding: 20px;
+    
   }
   .boxs-wraper {
     flex-direction: column;
@@ -205,6 +213,70 @@ html, body {
   }
 
   /* box-container Styling End */
+
+  /* Brand Logo Styling Start */
+  .brands {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    
+  }
+
+  .brand-content,
+  .brand-logos {
+    width: 100%;
+    height: auto;
+  }
+  .brand-content {
+    text-align: center;
+  }
+
+  .brand-content h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .brand-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .brand-logos {
+    flex-direction: column;
+  }
+
+  .brand-logos img {
+    display: none; /* Mobile view se hata diya */
+  }
+
+  .logo-box {
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-box-wraper {
+    grid-template-columns: repeat(2, 1fr); /* Mobile par 2 columns */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden; /* Scroll ko bhi hataya */
+  }
+
+  .logo-box-wraper span {
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* Brand Logo Styling End */
 }
 
 @media (max-width: 480px) {
@@ -252,6 +324,7 @@ html, body {
 
 @media (max-width: 1200px) {
   .services-solution .top h2 {
+    margin-top: 0px;
     font-size: 48px;
   }
 }
@@ -261,6 +334,7 @@ html, body {
   .services-solution .top h2 {
     font-size: 25px;
     padding: 0;
+    margin-top: 0px;
   }
   .mid img {
     width: 100%;
@@ -272,72 +346,8 @@ html, body {
   .boxs-wraper {
     flex-wrap: wrap;
     justify-content: center;
-  }  
+  }
 }
 
 /* /////////////////////////////// */
-
-@media (max-width: 768px) {
-  .brands {
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-
-  .brand-content,
-  .brand-logos {
-    width: 100%;
-    height: auto;    
-  }
-  .brand-content{
-    text-align: center;
-  }
-
-  .brand-content h2 {
-    font-size: 40px;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .brand-content p {
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  .brand-logos {
-    flex-direction: column;
-  }
-
-  .brand-logos img {
-    display: none; /* Mobile view se hata diya */
-  }
-
-  .logo-box {
-    height: auto;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo-box-wraper {
-    grid-template-columns: repeat(2, 1fr); /* Mobile par 2 columns */
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden; /* Scroll ko bhi hataya */
-  }
-
-  .logo-box-wraper span {    
-    height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 

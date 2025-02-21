@@ -255,8 +255,7 @@ input {
   font-size: 58.62px;
   font-weight: 700;
   line-height: 93%;
-  text-align: center;
-  padding: 0px 15rem;
+  text-align: center;    
 }
 .services-solution .top h2 span {
   color: #e6b110;
@@ -282,7 +281,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15rem;
+  margin-top: 20rem;
   padding: 10px;
 }
 .boxs-wraper {
@@ -380,8 +379,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 2rem;
-
+  padding: 0px 2rem;  
+  margin-top: 8rem;
   flex-wrap: wrap;
 }
 .brand-content,
@@ -431,10 +430,8 @@ input {
 }
 .logo-box-wraper {
   width: 100%;
-  min-height: 400px;  
-  
-  display: grid;
-  
+  min-height: 400px;    
+  display: grid;  
   grid-template-columns: repeat(5, 1fr);  
   overflow-y: scroll;    
 }
