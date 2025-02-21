@@ -10,18 +10,16 @@ body {
   overflow-x: hidden;
 }
 
-
 /* Mobile (Max width 768px) */
 @media (max-width: 768px) {
-  
-.container,
-.box-container,
-.brands,
-.about,
-.services-solution {
-  margin: 0 auto;
-  padding: 0;
-}
+  .container,
+  .box-container,
+  .brands,
+  .about,
+  .services-solution {
+    margin: 0 auto;
+    padding: 0;
+  }
   /* Hero Section Start */
   .heading {
     font-size: 35px;
@@ -157,9 +155,9 @@ body {
 
   /* Services Solution Styling Start */
 
-  .services-solution {    
+  .services-solution {
     height: auto;
-    padding:30px;  
+    padding: 30px;
     justify-content: start;
   }
 
@@ -192,7 +190,6 @@ body {
     height: auto;
     margin-top: 0;
     padding: 20px;
-    
   }
   .boxs-wraper {
     flex-direction: column;
@@ -222,7 +219,6 @@ body {
     align-items: center;
     text-align: center;
     padding: 2rem 1rem;
-    
   }
 
   .brand-content,
@@ -351,3 +347,242 @@ body {
 
 /* /////////////////////////////// */
 
+/* Car Inspection Responsive Styling Start */
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .container,
+  .car-insp-hero-section,
+  .services-includes,
+  .form-section,
+  .portfolio {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* Hero Section */
+  .car-insp-hero-section {
+    color: #111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/car-inspection-hero-bg.png) no-repeat center center / cover;
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .car-insp-heading {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .hero-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 15px 0;
+  }
+
+  /* Buttons */
+  .btn-custom {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    margin: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+  }
+
+  .hero-btn-1 {
+    background: #e6b110;
+    color: #111;
+  }
+
+  .hero-btn-2 {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+/* Hero Section Styling End */
+
+  /* services-includes Responsive Styling Start */
+
+  .services-includes {
+    padding: 30px 0;
+    
+  }
+
+  .services-includes .top h2 {
+    font-size: 36px;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .services-includes .top p {
+    font-size: 15px;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .services-includes .mid img {
+    max-width: 90%;
+  }
+  /* services-includes Responsive Styling End */
+  /* Form Section Styling Start */
+
+  
+  .form-section {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0rem;
+    text-align: center;
+  }
+  .right, .left {
+    width: 100%;
+  }
+
+  .form-content {
+    font-size: 35px;
+    line-height: 100%;
+    
+  }
+
+  .right div p {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .form-section .left .form-container {
+    padding: 20px 20px;
+  }
+
+  .input-group {
+    padding: 8px;
+  }
+
+  .double {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .left .btn {
+    width: 80px;
+    height: 80px;
+    margin-top: 1rem;
+  }
+
+  .car-group-img-container {
+    flex-direction: column;
+  }
+
+  /* Form Section Styling End */
+
+  /* Portfolio Section Styling Start */
+
+  
+  .portfolio {
+    padding: 30px 10px; /* Reduced padding for small screens */
+  }
+
+  .portfolio-title h1 {
+    font-size: 32px; /* Smaller heading for mobile */
+    text-align: center;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust grid layout */
+    gap: 15px;
+  }
+
+  .portfolio-card {
+    max-width: 100%; /* Full width for small screens */
+  }
+
+  .portfolio-card img {
+    height: 200px; /* Smaller image size */
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .portfolio-card h2 {
+    font-size: 16px; /* Adjusted font size */
+    margin-top: 1rem;
+    padding: 0px 1rem;
+  }
+
+  .portfolio-card p {
+    font-size: 12px; /* Adjusted paragraph font size */
+  }
+
+  /* Portfolio Section Styling End */
+
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .car-insp-content {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .car-insp-btns {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .car-insp-btn {
+    background-color: #e6b110;
+    color: #111;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .car-insp-btn2 {
+    background-color: transparent;
+    border: 2px solid #111;
+  }
+
+  .col-md-6 img {
+    max-width: 100%;
+  }
+}
+
+/* services-includes Responsive Styling */
+
+/* Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
+  .services-includes {
+    padding: 20px 0;
+    
+  }
+
+  .services-includes .top h2 {
+    font-size: 28px;
+    padding: 0 1rem;
+  }
+
+  .services-includes .top p {
+    font-size: 14px;
+    padding: 0 1rem;
+  }
+
+  .services-includes .mid img {
+    max-width: 100%;
+  }
+}

@@ -11,6 +11,8 @@
 .black-color {
   color: #111;
 }
+
+/* General Repair Page Styling Start */
 /* Hero Section Styling */
 .hero {
   position: relative;
@@ -255,7 +257,7 @@ input {
   font-size: 58.62px;
   font-weight: 700;
   line-height: 93%;
-  text-align: center;    
+  text-align: center;
 }
 .services-solution .top h2 span {
   color: #e6b110;
@@ -379,7 +381,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 2rem;  
+  padding: 0px 2rem;
   margin-top: 8rem;
   flex-wrap: wrap;
 }
@@ -426,14 +428,13 @@ input {
   width: 100%;
   min-height: 400px;
   background-color: #e1e1e183;
-  
 }
 .logo-box-wraper {
   width: 100%;
-  min-height: 400px;    
-  display: grid;  
-  grid-template-columns: repeat(5, 1fr);  
-  overflow-y: scroll;    
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-y: scroll;
 }
 
 /* Scrollbar Styling */
@@ -486,3 +487,302 @@ input {
   background: url("./img/logo-10.png") no-repeat center center;
 }
 /* Brands Section Styling End */
+
+/* General Repair Page Styling End */
+
+/* Car Inspection Page Styling Start */
+
+/* Hero Section Start */
+.car-insp-hero-section {
+  color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/car-inspection-hero-bg.png) no-repeat center
+    center/cover;
+  position: relative;
+  z-index: 10;
+}
+.car-insp-heading {
+  font-size: 58.62px;
+  font-weight: 700;
+  line-height: 112%;
+  color: #111;
+  text-align: left;
+}
+.car-insp-content{
+  font-size: 21.39px;
+  line-height: 120%;
+  font-weight: 300;
+  letter-spacing: -4%;
+  color: #111;
+  margin: 20px 0px;
+}
+
+.car-insp-btns {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.car-insp-btn {
+  background-color: #e6b110; /* Indigo-500 */
+  color: #111;
+  padding: 12px 45px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18.51px;
+  font-weight: 600;
+  letter-spacing: -1%;
+}
+.car-insp-btn2 {
+  background-color: transparent;
+  border: 2px solid #111;
+}
+.car-insp-btn1:hover {
+  background-color: #e6b110dc; /* Indigo-600 */
+}
+.Partner-content {
+  font-size: 21.39px;
+  line-height: 120%;
+  font-weight: 3 00;
+  letter-spacing: -4%;
+  color: #111;
+  margin: 20px 0px;
+}
+/* Hero Section End */
+
+/* services-includes Styling Start */
+
+.services-includes {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  
+}
+.services-includes .top h2 {
+  font-size: 58.62px;
+  font-weight: 700;
+  line-height: 93%;
+  text-align: center;
+  padding: 0 12rem;
+}
+.services-includes .top h2 span {
+  color: #e6b110;
+}
+
+.services-includes .top p {
+  font-size: 21.39px;
+  line-height: 135%;
+  font-weight: 300;
+  color: #111;
+  margin: 20px 0px;
+  text-align: center;
+  padding: 0 15rem;
+}
+
+.services-includes .mid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.services-includes .mid img {
+  width: 100%;
+  max-width: 800px;
+}
+/* services-includes Styling End */
+
+/* form-section Stylind Start */
+
+.form-section {
+  position: relative;
+  background: url("./img/car-insp-form-section-bg.png") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+  margin-top: 7rem;
+}
+
+.form-section .left {
+  width: 50%;
+}
+
+.form-content {
+  font-size: 65.47px;
+  font-weight: 700;
+  line-height: 85%;
+  text-align: center;
+  color: black;
+}
+
+.right div p {
+  font-size: 22.58px;
+  line-height: 135%;
+  font-weight: 300;
+  letter-spacing: -4%;
+  color: #111;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.form-section .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section .left .form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./img/form-bg.png") no-repeat center center/cover;
+  padding: 100px 60px;
+  border-radius: 10px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  gap: 5px;
+  border: 2px solid #9b9b9b;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.double {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.left .btn {
+  background: #e6b110;
+  color: #111;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .btn:hover {
+  background: #e6b110e0;
+  color: #111;
+}
+
+.car-group-img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* form-section Stylind End */
+
+/* portfolio Section Styling Start */
+
+.portfolio {
+  background-color: #f5f5f5;
+  color: gray;
+  padding: 50px 0;
+}
+
+/* .portfolio-wrapper {
+  max-width: 1200px;
+  padding: 30px 40px;
+  margin: 0 auto;
+} */
+
+.portfolio-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.portfolio-title {
+  margin: 0 auto;
+}
+.portfolio-title h1 {
+  font-size: 58.62px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-card {
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.portfolio-card img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.portfolio-card h2 {
+  margin-top: -1rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: #111;
+  
+}
+
+.portfolio-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* portfolio Section Styling End */
+
+/* Car Inspection Page Styling End */
