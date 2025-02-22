@@ -1,0 +1,315 @@
+body {
+  overflow: hidden;
+}
+section {
+  overflow: hidden;
+}
+
+/* cearmic Hero Section Styleing Start */
+
+.cearmic-hero-section {
+  position: relative;
+  background: url(./img/cearmic.png) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  overflow: visible;
+}
+
+/* Overlay Effect */
+.cearmic-hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+.cearmic-hero-section h1 {
+  font-size: 130px;
+  font-weight: 900;
+  letter-spacing: -7%;
+  line-height: 99%;
+  padding: 0px 6rem;
+  padding-top: 11rem;
+}
+
+.cearmic-hero-section img {
+  width: 100%;
+  max-width: 75%;
+  height: 100%;
+  position: absolute;
+  bottom: -30%;
+  z-index: 10;
+}
+/* cearmic Hero Section Styleing End */
+/* Save Section Styling Start */
+
+.save-section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 2rem;
+  margin-top: 9rem;
+}
+.save-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.save-left h2 {
+  font-size: 58.62px;
+  line-height: 99%;
+  font-weight: 700;
+}
+.save-left p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #111;
+}
+.save-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.save-bnts {
+  display: flex;
+  gap: 1rem;
+}
+
+.save-bnt {
+  padding: 1rem 2rem;
+  background: #e6b110;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.save-bnt2 {
+  background-color: transparent;
+  color: #111;
+  border: 2px solid #111;
+}
+
+.save-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.save-right img {
+  width: 100%;
+}
+
+/* Save Section Styling End */
+
+/* Cearmic Form Section Start */
+
+.cearmic-form-seciton {
+  background: url(./img/cearmic-form-bg.png) no-repeat center center/cover;
+}
+.ceramic-form-bg {
+  background: url(./img/form-black-bg.png) no-repeat center center/cover;
+  border-radius: 15px;
+}
+.cearmic-form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cearmic-form-heading {
+  font-size: 55px;
+  line-height: 85%;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cearmic-fomr-btn {
+  bottom: -20%;
+  left: 41%;
+}
+
+/* Cearmic Form Section End */
+
+/* Coating Section styling Start */
+
+.coating-section {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 0;
+}
+.coating-top {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.coating-top h2 {
+  font-size: 68.8px;
+  line-height: 93%;
+  font-weight: bold;
+  padding: 0 20rem;
+  text-align: center;
+}
+.coating-top p {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  padding: 0px 5rem;
+}
+.coating-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 0px 3rem;
+}
+.coating-bottom-grid-item {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.coating-bottom-grid-item img {
+  width: 100%;
+}
+
+/* Coating Section styling End */
+
+@media (max-width: 768px) {
+  /* Hero Section Start */
+  .cearmic-hero-section {
+    height: 60vh; /* Mobile pe thoda kam height */
+    padding: 3rem 0rem;
+  }
+
+  .cearmic-hero-section h1 {
+    font-size: 70px; /* Mobile pe chhota size */
+    padding: 0px 2rem;
+    padding-top: 5rem;
+    text-align: center;
+  }
+
+  .cearmic-hero-section img {
+    max-width: 120%; /* Image ko thoda responsive banaya */
+    height: auto;
+    bottom: 0%; /* Image ki position adjust */
+    top: 45%;
+    margin: 0 auto;
+  }
+  /* Hero Section End */
+  /* Save Section Styling Start */
+  .save-section {
+    flex-direction: column;
+    height: auto; /* Height auto taake content adjust ho */
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .save-left,
+  .save-right {
+    width: 100%;
+  }
+
+  .save-left {
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .save-left h2 {
+    font-size: 30px; /* Heading ka size chhota */
+    line-height: 110%;
+  }
+
+  .save-left p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .save-bnts {
+    flex-direction: column; /* Buttons stack honge */
+    width: 100%;
+  }
+
+  .save-bnt {
+    width: 100%;
+    max-width: 300px; /* Buttons ka size control */
+  }
+
+  .save-right img {
+    display: none;
+  }
+  /* Save Section Styling End */
+
+  /* Form Section Start*/
+
+  .cearmic-fomr-btn {
+    bottom: -15%;
+    left: 50%;
+  }
+  .cearmic-form-heading {
+    font-size: 30px;
+    margin-top: 3rem;
+  }
+  /* Form Section End*/
+}
+
+
+@media (max-width: 768px) {
+    .coating-section {
+      gap: 3rem;
+      padding: 3rem 1rem;
+    }
+  
+    .coating-top h2 {
+      font-size: 40px; /* Heading size chhota */
+      padding: 0 2rem;
+      line-height: 110%;
+    }
+    .coating-top p{
+        padding: 0px;
+    }
+  
+    .coating-bottom p {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 0rem;
+      }
+  
+      .coating-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 1rem;
+      }
+    
+      .coating-bottom-grid-item {
+        display: flex;
+        flex-direction: column-reverse !important; /* Forcefully reverse order */
+        text-align: center;
+        gap: 1rem;
+      }
+  
+      .coating-bottom-grid-item img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto; /* Center images */
+      }
+  }
+  
