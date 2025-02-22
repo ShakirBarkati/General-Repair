@@ -511,7 +511,7 @@ input {
   color: #111;
   text-align: left;
 }
-.car-insp-content{
+.car-insp-content {
   font-size: 21.39px;
   line-height: 120%;
   font-weight: 300;
@@ -564,7 +564,6 @@ input {
   justify-content: center;
   align-items: center;
   margin-top: 12rem;
-  
 }
 .services-includes .top h2 {
   font-size: 58.62px;
@@ -719,23 +718,15 @@ input {
 /* portfolio Section Styling Start */
 
 .portfolio {
-  background-color: #f5f5f5;
   color: gray;
   padding: 50px 0;
 }
-
-/* .portfolio-wrapper {
-  max-width: 1200px;
-  padding: 30px 40px;
-  margin: 0 auto;
-} */
 
 .portfolio-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
 }
 .portfolio-title {
   margin: 0 auto;
@@ -775,7 +766,6 @@ input {
   font-size: 20px;
   font-weight: 500;
   color: #111;
-  
 }
 
 .portfolio-card p {
@@ -786,3 +776,293 @@ input {
 /* portfolio Section Styling End */
 
 /* Car Inspection Page Styling End */
+
+/* /////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////// */
+
+/* Body Shop Hero Section Start */
+.body-shop-hero-section {
+  color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/shop-hero-bg.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 10;
+}
+.body-shop-heading {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 112%;
+  color: #111;
+  text-align: left;
+}
+.body-shop-content {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 300;
+  letter-spacing: -4%;
+  color: #111;
+  margin: 20px 0px;
+}
+/* Body Shop Hero Section End */
+
+/* atuo-body-service Section Styling Start */
+.atuo-body-service {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+.atuo-body-service::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./img/auto-body-services-tree.png) no-repeat right center;
+  background-size: contain; /* ya cover, depend karta hai tumhari need par */
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.atuo-body-left,
+.atuo-body-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.atuo-body-right {
+  gap: 30px;
+}
+.list-items-parent {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+.list-items-1,
+.list-items-2 {
+  width: 45%;
+}
+
+.list-items-parent span {
+  width: 1px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.atuo-body-right h2 {
+  font-size: 58.62px;
+  line-height: 106%;
+  font-weight: 700;
+  text-align: left;
+}
+.atuo-body-right p {
+  font-size: 21.39px;
+  font-weight: 400;
+  letter-spacing: -4%;
+  line-height: 135%;
+  text-align: left;
+  color: #111;
+}
+/* atuo-body-service Section Styling End */
+
+/* body Shop Portfolio Section Styling Start */
+
+.portfolio {
+  color: gray;
+  padding: 50px 0;
+}
+
+.body-shop-portfolio-header {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.body-shop-portfolio-title {
+  margin: 0 auto;
+}
+.body-shop-portfolio-title h1 {
+  font-size: 58.62px;
+  line-height: 106%;
+  font-weight: bold;
+  text-align: left;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.body-shop-portfolio-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: end;
+  gap: 20px;
+}
+.body-shop-portfolio-btn {
+  background-color: #e6b110; /* Indigo-500 */
+  color: #111;
+  padding: 12px 45px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18.51px;
+  font-weight: 600;
+  letter-spacing: -1%;
+}
+.body-shop-portfolio-btn2 {
+  background-color: transparent;
+  border: 2px solid #111;
+  padding: 12px 90px;
+}
+.body-shop-portfolio-btn1:hover {
+  background-color: #e6b110dc; /* Indigo-600 */
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-card {
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.portfolio-card img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.portfolio-card h2 {
+  margin-top: -1rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: #111;
+}
+
+.portfolio-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* body Shop Portfolio Section Styling End */
+
+
+
+/* box-container Styling Start */
+
+.body-shop-box-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 10px;
+}
+.boxs-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.body-shop-box {
+  max-width: 25%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-1 {
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 3px,
+        transparent 3px
+      )
+      0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px)
+      100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px)
+      0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100%
+      100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 10px)
+      calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 16px)
+      calc(100% - 10px) no-repeat,
+    linear-gradient(0deg, #e6b110 43%, #eeeeee 72%);
+  border-radius: 8px;
+  padding: 9px;
+  box-sizing: border-box;
+}
+.box-2 {
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 3px,
+        transparent 3px
+      )
+      0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px)
+      100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px)
+      0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100%
+      100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 10px)
+      calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 16px)
+      calc(100% - 10px) no-repeat,
+    repeating-linear-gradient(0deg, #747474 0%, #eeeeee 100%);
+  border-radius: 8px;
+  padding: 9px;
+  box-sizing: border-box;
+}
+.box-1 img {
+  width: 80%;
+}
+.box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  padding: 0px 15px;
+}
+.box-content h4 {
+  font-size: 30px;
+  letter-spacing: -4%;
+  font-weight: 700;
+  line-height: 117%;
+}
+.box-content .body-shop-box-change-title{
+  font-size: 25px;
+}
+.box-content p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 114.2%;
+  letter-spacing: -4%;
+}
+/* box-container Styling End */
+
+
+
+/* Body Shop Section Styling End */

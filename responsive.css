@@ -372,7 +372,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./img/car-inspection-hero-bg.png) no-repeat center center / cover;
+    background: url(./img/car-inspection-hero-bg.png) no-repeat center center /
+      cover;
     position: relative;
     z-index: 10;
     flex-direction: column;
@@ -416,13 +417,12 @@ body {
     color: #fff;
     border: 2px solid #fff;
   }
-/* Hero Section Styling End */
+  /* Hero Section Styling End */
 
   /* services-includes Responsive Styling Start */
 
   .services-includes {
     padding: 30px 0;
-    
   }
 
   .services-includes .top h2 {
@@ -441,23 +441,23 @@ body {
     max-width: 90%;
   }
   /* services-includes Responsive Styling End */
+
   /* Form Section Styling Start */
 
-  
   .form-section {
     flex-direction: column;
     height: auto;
     padding: 2rem 0rem;
     text-align: center;
   }
-  .right, .left {
+  .right,
+  .left {
     width: 100%;
   }
 
   .form-content {
     font-size: 35px;
     line-height: 100%;
-    
   }
 
   .right div p {
@@ -492,7 +492,6 @@ body {
 
   /* Portfolio Section Styling Start */
 
-  
   .portfolio {
     padding: 30px 10px; /* Reduced padding for small screens */
   }
@@ -503,7 +502,10 @@ body {
   }
 
   .portfolio-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust grid layout */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(180px, 1fr)
+    ); /* Adjust grid layout */
     gap: 15px;
   }
 
@@ -528,7 +530,6 @@ body {
   }
 
   /* Portfolio Section Styling End */
-
 }
 
 /* Mobile View (max-width: 480px) */
@@ -569,7 +570,6 @@ body {
 @media (max-width: 576px) {
   .services-includes {
     padding: 20px 0;
-    
   }
 
   .services-includes .top h2 {
@@ -586,3 +586,273 @@ body {
     max-width: 100%;
   }
 }
+/* Car Inspection Responsive Styling End */
+
+/* Body Shop Responsive Styling End */
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+  /*  Hero Section Styling End  */
+  .body-shop-hero-section {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .car-insp-hero-section-wraper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .car-insp-heading {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .car-insp-content {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .car-insp-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .car-insp-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .atuo-body-service {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .atuo-body-left,
+  .atuo-body-right {
+    width: 100%;
+    text-align: center;
+  }
+  .atuo-body-right h2 {
+    font-size: 32px;
+  }
+  .atuo-body-right p {
+    font-size: 16px;
+  }
+  .list-items-parent {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .list-items-1,
+  .list-items-2 {
+    width: 100%;
+  }
+/*  Hero Section Styling Start  */
+
+
+
+  /* Form Section Styling Start */
+
+  .form-section {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0rem;
+    text-align: center;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+
+  .form-content {
+    font-size: 25px;
+    line-height: 100%;
+  }
+
+  .right div p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .form-section .left .form-container {
+    padding: 20px 20px;
+  }
+
+  .input-group {
+    padding: 8px;
+  }
+
+  .double {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .left .btn {
+    width: 80px;
+    height: 80px;
+    margin-top: 1rem;
+  }
+
+  .car-group-img-container {
+    flex-direction: column;
+  }
+
+  /* Form Section Styling End */
+  
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .atuo-body-service {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .atuo-body-service::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(none) ;
+    background-size: contain;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  .atuo-body-left, .atuo-body-right {
+    width: 100%;    
+  }
+  .atuo-body-right h2 {
+    font-size: 36px;
+    
+  }
+  .atuo-body-right p {
+    font-size: 18px;
+    
+  }
+  .list-items-1, .list-items-2 {
+    width: 100%;
+    
+  }
+
+  .list-items-1 ul, .list-items-2  ul{
+    text-align: left;
+  }
+  .list-items-parent span {
+    display: none;
+  }
+}
+
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+/* //////////////////////////////////// */
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .body-shop-portfolio-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .body-shop-portfolio-btns {
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-shop-portfolio-header{
+    padding: 0px 0.5rem;
+  }
+  .body-shop-portfolio-title h1 {
+    font-size: 32px;
+  }
+.body-shop-portfolio-title p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .body-shop-portfolio-btn {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+
+  .body-shop-portfolio-btn2 {
+    padding: 10px 50px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 30px 10px;
+  }
+
+  .body-shop-portfolio-title h1 {
+    font-size: 24px;
+  }
+
+  .body-shop-portfolio-btns {
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+
+  .body-shop-portfolio-btn {
+    width: 100%;
+  }
+
+  .portfolio-card img {
+    height: 250px;
+  }
+}
+
+/* /////////////////////////// */
+/* /////////////////////////// */
+/* /////////////////////////// */
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 1024px) {
+  .body-shop-box-container {
+    height: auto;
+    padding: 20px;
+  }
+  .boxs-wraper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .body-shop-box {
+    max-width: 45%;
+    height: auto;
+  }
+  .box-content h4 {
+    font-size: 24px;
+  }
+  .box-content p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body-shop-box {
+    max-width: 100%;
+  }
+  .boxs-wraper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .box-content h4 {
+    font-size: 22px;
+  }
+  .box-content p {
+    font-size: 15px;
+  }
+}
+
+/* box-container Styling End */
+
+
+/* Body Shop Responsive Styling End */
