@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <!-- <link rel="stylesheet" href="responsive.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <!-- Bootstrap 5 CDN-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -12,320 +12,9 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+<link rel="stylesheet" href="auto-spa-service.css">
     <title>Auto Spa Service</title>
-  </head>
-  <style>
-    body {
-      overflow-x: hidden;
-    }
-    section {
-      overflow: hidden;
-    }
-.main-color{
-    color:#e6b110;
-}
-    /* auto-spa-hero */
-
-    
-/* Hero Section Start */
-.car-insp-hero-section {
-  color: #111;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(./img/car-inspection-hero-bg.png) no-repeat center
-    center/cover;
-  position: relative;
-  z-index: 10;
-}
-.car-insp-heading {
-  font-size: 58.62px;
-  font-weight: 700;
-  line-height: 112%;
-  color: #111;
-  text-align: left;
-}
-.car-insp-content {
-  font-size: 21.39px;
-  line-height: 120%;
-  font-weight: 300;
-  letter-spacing: -4%;
-  color: #111;
-  margin: 20px 0px;
-}
-
-.car-insp-btns {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-.car-insp-btn {
-  background-color: #e6b110; /* Indigo-500 */
-  color: #111;
-  padding: 12px 45px;
-  border-radius: 5px;
-  border: none;
-  font-size: 18.51px;
-  font-weight: 600;
-  letter-spacing: -1%;
-}
-.car-insp-btn2 {
-  background-color: transparent;
-  border: 2px solid #111;
-}
-.car-insp-btn1:hover {
-  background-color: #e6b110dc; /* Indigo-600 */
-}
-.Partner-content {
-  font-size: 21.39px;
-  line-height: 120%;
-  font-weight: 3 00;
-  letter-spacing: -4%;
-  color: #111;
-  margin: 20px 0px;
-}
-/* Hero Section End */
-
-    .atuo-spa-section {
-      width: 100%;
-      max-width: 1400px;
-    }
-    .auto-spa-contante {
-      padding-left: 50px;
-    }
-    .auto-spa-hero-image {
-      width: 750px;
-    }
-
-    /* We-do-all- */
-    .we-do-all-section {
-      width: 100%;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 50px 0;
-    }
-    .we-do-all-content {
-      text-align: center;
-    }
-    .we-do-all-content h4 {
-      font-size: 29.79px;
-      line-height: 106%;
-      font-weight: 700;
-    }
-    .we-do-all-content h1 {
-      font-size: 50px;
-      line-height: 106%;
-      font-weight: 700;
-      text-align: center;
-      padding: 0px 35px;
-    }
-    .we-do-all-mid {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .we-do-all-mid img {
-      width: 100%;
-      max-width: 1200px;
-    }
-    .we-do-all-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      margin-top: 50px;
-    }
-
-    .we-do-all-btn button {
-      padding: 15px 30px;
-      font-size: 20px;
-      font-weight: 700;
-      border: none;
-      background-color: #f7b71d;
-      color: #fff;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    .we-do-all-btn .we-do-all-btn2 {
-      background-color: transparent;
-      color: #111;
-      border: 2px solid #111;
-    }
-
-    /* form-section Stylind Start */
-
-    .form-section {
-      position: relative;
-      background: url("./img/auto-spa-service-form-bg.png") no-repeat center
-        center/cover;
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-      padding: 0 2rem;
-      margin-top: 7rem;
-    }
-
-    .form-section .left {
-      width: 50%;
-    }
-
-    .form-content {
-      font-size: 65.47px;
-      font-weight: 700;
-      line-height: 85%;
-      text-align: center;
-      color: black;
-    }
-
-    .right div p {
-      font-size: 22.58px;
-      line-height: 135%;
-      font-weight: 300;
-      letter-spacing: -4%;
-      color: #111;
-      margin: 20px 0px;
-      text-align: center;
-    }
-
-    .form-section .left {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .form-section .left .form-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: url("./img/form-bg.png") no-repeat center center/cover;
-      padding: 100px 60px;
-      border-radius: 10px;
-    }
-
-    .form {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
-    }
-
-    input {
-      background: transparent;
-      outline: none;
-      border: none;
-    }
-
-    .input-group {
-      display: flex;
-      width: 100%;
-      justify-content: start;
-      gap: 5px;
-      border: 2px solid #9b9b9b;
-      padding: 10px;
-      border-radius: 8px;
-    }
-    .double {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.half-width {
-    width: 48%;
-}
-
-.input-group {
-    display: flex;
-    align-items: center; /* Image aur input ko center align karega */
-    gap: 8px; /* Image aur input ke darmiyan space */
-    width: 100%;
-}
-
-.input-group img {
-    height: 20px;
-}
-
-.input-group input {
-    width: 100%; /* Input full width le */
-    flex: 1; /* Bacha hua space fill kare */
-}
-
-    .left .btn {
-      background: #fff;
-      color: #111;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-top: -1.8rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .left .btn:hover {
-      background: #e6b110e0;
-      color: #111;
-    }
-
-    .car-group-img-container {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    /* form-section Stylind End */
-
-    .auto-spa-form {
-      background: transparent;
-    }
-
-    .specialists{
-        width:100%;
-        height:250px;
-        background: url(./img/atuo-spa-specialists.png);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color:#fff;
-        text-align: center;  
-        gap:25px;      
-    }
-    .specialists h1{
-        padding:0px 7rem;
-        font-size:39.07px;
-        font-weight: bold;
-        line-height: 124%;
-    }
-    .specialists button {
-      padding: 10px 40px;
-      font-size: 20px;
-      font-weight: 700;
-      border: none;
-      background-color: #f7b71d;
-      color: #111;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-  </style>
+  </head> 
   <body>
     <!-- nav Start -->
     <nav>
@@ -421,14 +110,14 @@
             </span>
 
             <div class="double">
-                <div class="input-group half-width">
-                    <img src="./img/major-icon.png" alt="Major Icon" />
-                    <input type="text" placeholder="Major" />
-                </div>
-                <div class="input-group half-width">
-                    <img src="./img/minor-icon.png" alt="Minor Icon" />
-                    <input type="text" placeholder="Minor" />
-                </div>
+              <div class="input-group half-width">
+                <img src="./img/major-icon.png" alt="Major Icon" />
+                <input type="text" placeholder="Major" />
+              </div>
+              <div class="input-group half-width">
+                <img src="./img/minor-icon.png" alt="Minor Icon" />
+                <input type="text" placeholder="Minor" />
+              </div>
             </div>
 
             <span class="input-group">
@@ -453,15 +142,86 @@
         </div>
       </div>
     </section>
-<!-- Form Section End -->
+    <!-- Form Section End -->
 
-<!-- Specialists Section -->
- <section class="specialists">
-    <h1>For any type of Auto Spa Service in Dubai, feel free to contact with out Auto Spa Specialists
-    </h1>
-    <button>Call Now</button>
- </section>
+    <!-- Specialists Section Start-->
+    <section class="specialists">
+      <h1>
+        For any type of Auto Spa Service in Dubai, feel free to contact with out
+        Auto Spa Specialists
+      </h1>
+      <button>Call Now</button>
+    </section>
+    <!-- Specialists Section End-->
 
+    <!-- We Deal Section Start -->
+    <section class="we-deal-section">
+      <div class="we-deal-top">
+        <h2>
+          We Deal in All Types of
+          <span class="main-color"> Auto Spa Service in Dubai</span>
+        </h2>
+        <p>
+          Either it's about PPF Service, Tinting Service or you are looking for
+          complete car detailing service in Dubai, our Auto Spa Service in Dubai
+          has all the necessary tools and competent staff to help you to achieve
+          the goal - To make your car's look shine again.Apart from complete
+          Auto Spa Services, Gargash Auto Specializes in all Cars brands repair
+          service in Dubai. We are a leading Dealer Alternative Auto Workshop in
+          Dubai where you find top notch repair service with guaranteed
+          solutions every time.
+        </p>
+      </div>
+
+      <div class="we-deal-bottom">
+        <div class="we-deal-bottom-box">
+          <img src="./img/we-deal-box-1.png" alt="">
+          <h1>Auto Tinting Service</h1>
+          <p>Premium Quality Auto Tinting Service In Dubai, using Premium Tint Brands with 5 to 10 Years Warranty</p>
+        </div>
+        <div class="we-deal-bottom-box">
+          <img src="./img/we-deal-box-2.png" alt="">
+          <h1>PPF Service</h1>
+          <p>Premium Quality Paint Protection Film, especially For High-End Cars and by using top quality products</p>
+        </div>
+        <div class="we-deal-bottom-box">
+          <img src="./img/we-deal-box-3.png" alt="">
+          <h1>Car Headlight Restoration</h1>
+          <p>Restoration of all Foggy and broken headlights for all exotic and luxury car brands</p>
+        </div>
+        <div class="we-deal-bottom-box">
+          <img src="./img/we-deal-box-4.png" alt="">
+          <h1>Exterior Detailing</h1>
+          <p>A Complete Range of Car Exterior Detailing Service and Solutions for all Exotic and High End Cars in Dubai
+          </p>
+        </div>
+        <div class="we-deal-bottom-box">
+          <img src="./img/we-deal-box-5.png" alt="">
+          <h1>Interior Detailing</h1>
+          <p>A Complete Range of Car Interior Detailing Service and Solutions for all Exotic and High-End Cars in Dubai</p>
+        </div>
+        <div class="we-deal-bottom-box">
+          <img src="./img/we-deal-box-6.png" alt="">
+          <h1>Car Wrapping</h1>
+          <p>Customized Car Wraps Installation and Repair Services for all High End and Exotic Car Brands in Dubai</p>
+        </div>
+        <div class="we-deal-bottom-box">
+          <img src="./img/we-deal-box-7.png" alt="">
+          <h1>Anti Rust Proofing Coating</h1>
+          <p>One-Stop Shop for Car Rust Proofing and undercoating service in Dubai for all Exotic and Luxury Models</p>
+        </div>
+        <div class="we-deal-bottom-box">
+          <img src="./img/we-deal-box-8.png" alt="">
+          <h1>Car Color Change</h1>
+          <p>Need to Change and revamp the look of your Exotic Car? Just Get our Car Color Change Service in Dubai
+
+          </p>
+        </div>
+      
+      </div>
+    </section>
+
+    <!-- We Deal Section End -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

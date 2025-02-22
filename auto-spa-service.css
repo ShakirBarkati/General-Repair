@@ -1,0 +1,570 @@
+
+body {
+  overflow-x: hidden;
+}
+section {
+  overflow: hidden;
+}
+.main-color {
+  color: #e6b110;
+}
+/* auto-spa-hero */
+ /* Hero Section Start */
+ .car-insp-hero-section {
+    color: #111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/car-inspection-hero-bg.png) no-repeat center center/cover;
+    position: relative;
+    z-index: 10;
+  }
+  .car-insp-heading {
+    font-size: 58.62px;
+    font-weight: 700;
+    line-height: 112%;
+    color: #111;
+    text-align: left;
+  }
+  .car-insp-content {
+    font-size: 21.39px;
+    line-height: 120%;
+    font-weight: 300;
+    letter-spacing: -4%;
+    color: #111;
+    margin: 20px 0px;
+  }
+  .car-insp-btns {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .car-insp-btn {
+    background-color: #e6b110;
+    color: #111;
+    padding: 12px 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18.51px;
+    font-weight: 600;
+    letter-spacing: -1%;
+  }
+  .car-insp-btn2 {
+    background-color: transparent;
+    border: 2px solid #111;
+  }
+  .car-insp-btn1:hover {
+    background-color: #e6b110dc;
+  }
+  .Partner-content {
+    font-size: 21.39px;
+    line-height: 120%;
+    font-weight: 300;
+    letter-spacing: -4%;
+    color: #111;
+    margin: 20px 0px;
+  }
+/* Hero Section End */
+
+.atuo-spa-section {
+  width: 100%;
+  max-width: 1400px;
+}
+.auto-spa-contante {
+  padding-left: 50px;
+}
+.auto-spa-hero-image {
+  width: 750px;
+}
+
+/* We-do-all- */
+.we-do-all-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.we-do-all-content {
+  text-align: center;
+}
+.we-do-all-content h4 {
+  font-size: 29.79px;
+  line-height: 106%;
+  font-weight: 700;
+}
+.we-do-all-content h1 {
+  font-size: 50px;
+  line-height: 106%;
+  font-weight: 700;
+  text-align: center;
+  padding: 0px 35px;
+}
+.we-do-all-mid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.we-do-all-mid img {
+  width: 100%;
+  max-width: 1200px;
+}
+.we-do-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.we-do-all-btn button {
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  background-color: #f7b71d;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.we-do-all-btn .we-do-all-btn2 {
+  background-color: transparent;
+  color: #111;
+  border: 2px solid #111;
+}
+
+/* form-section Stylind Start */
+
+.form-section {
+  position: relative;
+  background: url("./img/auto-spa-service-form-bg.png") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+  margin-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.form-section .left {
+  width: 50%;
+}
+
+.form-content {
+  font-size: 65.47px;
+  font-weight: 700;
+  line-height: 85%;
+  text-align: center;
+  color: black;
+}
+
+.right div p {
+  font-size: 22.58px;
+  line-height: 135%;
+  font-weight: 300;
+  letter-spacing: -4%;
+  color: #111;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.form-section .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section .left .form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./img/form-bg.png") no-repeat center center/cover;
+  padding: 100px 60px;
+  border-radius: 10px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  gap: 5px;
+  border: 2px solid #9b9b9b;
+  padding: 10px;
+  border-radius: 8px;
+}
+.double {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.half-width {
+  width: 48%;
+}
+
+.input-group {
+  display: flex;
+  align-items: center; /* Image aur input ko center align karega */
+  gap: 8px; /* Image aur input ke darmiyan space */
+  width: 100%;
+}
+
+.input-group img {
+  height: 20px;
+}
+
+.input-group input {
+  width: 100%; /* Input full width le */
+  flex: 1; /* Bacha hua space fill kare */
+}
+
+.left .btn {
+  background: #fff;
+  color: #111;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .btn:hover {
+  background: #e6b110e0;
+  color: #111;
+}
+
+.car-group-img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* form-section Stylind End */
+
+.auto-spa-form {
+  background: transparent;
+}
+/* specialists Section */
+.specialists {
+  width: 100%;
+  height: 250px;
+  background: url(./img/atuo-spa-specialists.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  gap: 25px;
+}
+.specialists h1 {
+  padding: 0px 7rem;
+  font-size: 39.07px;
+  font-weight: bold;
+  line-height: 124%;
+}
+.specialists button {
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  background-color: #f7b71d;
+  color: #111;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* we-deal-section Styling  Start*/
+
+.we-deal-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 4rem 0px;
+}
+.we-deal-section .we-deal-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.we-deal-section .we-deal-top h2 {
+  font-size: 68.8px;
+  font-weight: bold;
+  line-height: 93%;
+  text-align: center;
+  padding: 0px 10rem;
+}
+.we-deal-section .we-deal-top p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  padding: 0px 15rem;
+}
+.we-deal-bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0px 3rem;
+}
+.we-deal-bottom-box{
+  width: 100%;
+  height: fit-content;
+}
+.we-deal-bottom-box img{
+  width: 300px;
+}
+.we-deal-bottom-box h1 {
+  font-size: 21.72px;
+  font-weight: 700;
+  line-height: auto;
+  text-align: center;
+  color: #111;
+  margin-top: -1rem;
+}
+.we-deal-bottom-box p{
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+/* we-deal-section Styling  End*/
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+    .car-insp-hero-section {
+      height: auto;      
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    .car-insp-hero-section-wraper {
+      flex-direction: column;
+    }
+    .car-insp-heading {
+      font-size: 28px;
+      text-align: center;
+    }
+    .car-insp-content {
+      font-size: 14px;
+
+    }
+    .auto-spa-contante {
+        padding-left: 0px;
+      }
+    .car-insp-btns {
+      flex-direction: column;
+      align-items: center;
+    }
+    .car-insp-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      padding: 12px;      
+    }
+   
+    .auto-spa-hero-image {
+      width: 100%;
+      max-width: 350px;
+    }
+    /* Hero Section End */
+    /* We Do Section Start */
+    .we-do-all-section {
+        padding: 30px 15px;
+      }
+      
+      .we-do-all-content h4 {
+        font-size: 22px;
+      }
+      
+      .we-do-all-content h1 {
+        font-size: 28px;
+        padding: 0 15px;
+      }
+    
+      .we-do-all-mid img {
+        max-width: 90%;
+      }
+    
+      .we-do-all-btn {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+      }
+    
+      .we-do-all-btn button {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px 20px;
+      }
+    /* We Do Section End */
+    /* Form Section Start */
+
+
+    .form-section {
+        flex-direction: column-reverse; /* Reverse order for mobile */
+        height: auto;
+        padding: 50px 15px;
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    
+      .form-section .left {
+        width: 100%;
+        order: 2; /* Form ko neeche le aya */
+      }
+    
+      .form-section .right {
+        width: 100%;
+        order: 1; /* Text ko upar le aya */
+        padding: 20px 0;
+      }
+    
+      .form-content {
+        font-size: 32px;
+        line-height: 100%;
+      }
+    
+      .right div p {
+        font-size: 18px;
+        line-height: 125%;
+        margin: 10px 0;
+      }
+    
+      .form-section .left .form-container {
+        width: 100%;
+        padding: 50px 20px;
+      }
+    
+      .form {
+        width: 100%;
+        gap: 10px;
+      }
+    
+      .input-group {
+        padding: 8px;
+        font-size: 14px;
+      }
+    
+      .double {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .half-width {
+        width: 100%;
+      }
+    
+      .left .btn {
+        width: 70px;
+        height: 70px;
+        margin-top: -1rem;
+      }
+    
+      .input-group img {
+        height: 16px;
+      }
+    
+      .input-group input {
+        font-size: 14px;
+      }
+    
+      /* Remove car group image for mobile */
+      .car-group-img-container {
+        display: none;
+      }
+    /* Form Section End */
+    /* specialists Start*/
+    .specialists {
+        height: auto;
+        background-size: cover;
+        padding: 20px;
+      }
+    
+      .specialists h1 {
+        font-size: 24px;
+        padding: 0 1rem;
+      }
+    
+      .specialists button {
+        padding: 12px 30px;
+        font-size: 18px;
+      }
+    /* specialists End */
+  }
+
+/* Mobile Responsive Styles */
+@media (max-width: 1024px) { /* Tablet View */
+    .we-deal-section .we-deal-top h2 {
+      font-size: 50px;
+      padding: 0 5rem;
+    }
+    .we-deal-section .we-deal-top p {
+      font-size: 16px;
+      padding: 0 3rem;
+    }
+    .we-deal-bottom {
+      grid-template-columns: repeat(2, 1fr); /* 2 Columns on Tablet */
+      padding: 0 2rem;
+    }
+    /* we-deal-section Start */
+    .we-deal-section {
+        padding: 2rem 1rem;
+      }
+      .we-deal-section .we-deal-top h2 {
+        font-size: 30px;
+        padding: 0 1rem;
+      }
+      .we-deal-section .we-deal-top p {
+        font-size: 14px;
+        padding: 0 1rem;
+      }
+      .we-deal-bottom {
+        grid-template-columns: 1fr; /* 1 Column on Mobile */
+        gap: 15px;
+        padding: 0 1rem;
+      }
+      .we-deal-bottom-box img {
+        width: 100%; /* Full width images */
+      }
+
+    /* we-deal-section End */
+  }
+  
+
+  
+  
+  
