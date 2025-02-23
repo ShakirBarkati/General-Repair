@@ -59,7 +59,7 @@ body {
 
   .about {
     position: relative;
-    background: url("./img/about-section-bg.png") no-repeat center center/cover;
+    background: url("../img/about-section-bg.png") no-repeat center center/cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -372,7 +372,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./img/car-inspection-hero-bg.png) no-repeat center center /
+    background: url(../img/car-inspection-hero-bg.png) no-repeat center center /
       cover;
     position: relative;
     z-index: 10;
