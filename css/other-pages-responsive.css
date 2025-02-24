@@ -645,9 +645,7 @@ body {
   .list-items-2 {
     width: 100%;
   }
-/*  Hero Section Styling Start  */
-
-
+  /*  Hero Section Styling Start  */
 
   /* Form Section Styling Start */
 
@@ -696,7 +694,6 @@ body {
   }
 
   /* Form Section Styling End */
-  
 }
 
 /* Responsive Design */
@@ -712,28 +709,28 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(none) ;
+    background: url(none);
     background-size: contain;
     z-index: -1;
     opacity: 0.5;
   }
-  .atuo-body-left, .atuo-body-right {
-    width: 100%;    
+  .atuo-body-left,
+  .atuo-body-right {
+    width: 100%;
   }
   .atuo-body-right h2 {
     font-size: 36px;
-    
   }
   .atuo-body-right p {
     font-size: 18px;
-    
   }
-  .list-items-1, .list-items-2 {
+  .list-items-1,
+  .list-items-2 {
     width: 100%;
-    
   }
 
-  .list-items-1 ul, .list-items-2  ul{
+  .list-items-1 ul,
+  .list-items-2 ul {
     text-align: left;
   }
   .list-items-parent span {
@@ -745,7 +742,6 @@ body {
 /* //////////////////////////////////// */
 /* //////////////////////////////////// */
 /* //////////////////////////////////// */
-
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -761,13 +757,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .body-shop-portfolio-header{
+  .body-shop-portfolio-header {
     padding: 0px 0.5rem;
   }
   .body-shop-portfolio-title h1 {
     font-size: 32px;
   }
-.body-shop-portfolio-title p {
+  .body-shop-portfolio-title p {
     font-size: 14px;
     text-align: left;
   }
@@ -812,8 +808,6 @@ body {
 /* /////////////////////////// */
 /* /////////////////////////// */
 
-
-
 /* Mobile Responsive */
 @media screen and (max-width: 1024px) {
   .body-shop-box-container {
@@ -854,7 +848,137 @@ body {
 
 /* box-container Styling End */
 
-
 /* Body Shop Responsive Styling End */
 
+/* Major  And Minor Page Styling Start */ 
 
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  /* All type section styling Start */
+  .all-type-section {
+    padding: 2rem;
+    gap: 30px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+  }
+
+  .tab {
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .content.active {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .capsule-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 20px;
+  }
+
+  .capsule-box img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .capsule-box h4 {
+    font-size: 18px;
+  }
+
+  .capsule-box p {
+    font-size: 12px;
+  }
+  /* All type section styling End */
+
+  
+
+/* Text Section Styling */
+.text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.text-container {
+  max-width: 600px;
+}
+
+.text-section h4 {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+/* Text Section Styling */
+
+    /* Form Section Responsive Start*/
+    .major-and-minor-form-section {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .major-and-minor-form {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .text-section h4, .text-section p {
+      font-size: 14px;
+      padding: 10px;
+    }
+    
+        /* Form Section Responsive End */
+        /* Logo Section Styling Start*/
+
+
+        .logo-section h2 {
+          font-size: 32px;
+          padding: 0 2rem;
+        }
+      
+        .logos-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+      
+        .logo-item {
+          width: 90%;
+        }
+      
+        .logo-item h6 {
+          margin-top: 5rem;
+          margin-left: 0;
+          font-size: 18px;
+          text-align: center;
+        }
+        /* Logo Section Styling End*/
+
+}
+
+/* Major  And Minor Page Styling End */

@@ -2364,3 +2364,193 @@ input {
 
 
 /* Auto Spa Service Styling End */
+
+
+
+/* Major  And Minor Page Styling Start */
+
+/* All Type Section Styling Start */
+
+.all-type-section {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 50px;
+  margin-top: 0px;
+  padding: 4rem;
+}
+.all-type-section .all-type-top h2 {
+  font-size: 58.62px;
+  font-weight: 700;
+  line-height: 106%;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px !important;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.tab {
+  padding: 15px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.tab.active {
+  background: yellow;
+  font-weight: bold;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.capsule-box {
+  display: flex;
+  align-items: center;
+  /* width: 300px; */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50px;
+  background: white;
+  box-shadow: 2px 6px 10px -3px rgba(0, 0, 0, 0.75);
+}
+.capsule-box h4 {
+  font-size: 21.33px;
+  font-weight: 500;
+  /* line-height: 66px; */
+}
+.capsule-box p {
+  font-size: 14.7px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.capsule-box img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+/* All Type Section Styling End */
+
+/* Major And minor form section styling start */
+.major-and-minor-form-section {
+  flex-direction: column-reverse;
+  background: url(./img/majo-minor-form-section-bg.png);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Center align content */
+  justify-content: center; /* Center align horizontally */
+  min-height: 100vh; /* Ensure full height */
+}
+.major-and-minor-form-section::after {
+  content: "";
+  background: none;
+}
+
+.major-and-minor-form {
+  max-width: 45%;
+}
+
+/* Major And minor form section styling End */
+
+/* text-section Start  */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.text-section h4 {
+  color: red;
+  font-size: 21.39px;
+  line-height: 135%;
+  letter-spacing: -4%;
+  font-weight: bold;
+}
+
+/* text-section End */
+
+/* Logo Section Start */
+
+.logo-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5rem 0;
+}
+.logo-section h2 {
+  font-size: 58.62px;
+  font-weight: bold;
+  line-height: 106%;
+  padding: 0px 23rem;
+  text-align: center;
+ 
+}
+
+.logos-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  
+
+}
+.logo-item {
+  background-size: contain; /* cover bhi try kar sakte hain */
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;  
+}
+/* Backgrounds for each logo-item */
+.logo-item-1 {
+  background: url(./img/qualified-logo-bg.png) no-repeat center center;
+}
+.logo-item-2 {
+  background: url(./img/dealer\ -logo-bg.png) no-repeat center center;
+}
+.logo-item-3 {
+  background: url(./img/free-pickup-logo-bg.png) no-repeat center center;
+}
+.logo-item-4 {
+  background: url(./img/transparent-logo-bg.png) no-repeat center center;
+}
+.logo-item-5 {
+  background: url(./img/guaranteed-logo-bg.png) no-repeat center center;
+}
+
+.logo-item h6{
+  margin-top: 6rem;
+  margin-left: -3rem;
+  font-size: 21.39px;
+  font-weight: 600;
+  letter-spacing: -4%;
+  line-height: 135%;
+}
+
+
+/* Logo Section End */
+
+
+
+/* Major  And Minor Page Styling End */
